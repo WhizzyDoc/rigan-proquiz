@@ -1,38 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Geeks Quiz App</title>
+    <title>Rigan Programming Quiz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="src/home.css">
   </head>
-  <body onload="myFunction()">
-    <div class="title">RIGAN QUIZ APP</div>
+  <body>
+    <div class="title">RIGAN PROGRAMMING QUIZ</div>
     
-    <div class="container" id="container">
+    <!-- Small Screen View -->
+
+    <div class="container" id="small">
       
       <div class="content">
         <div class="img">
-          <img src="logo1.png">
+          <img src="image/html.png">
         </div>
-        <button><a href="html.html">HTML Quiz</a></button>
+        <button><a href="quiz/html/html.html">HTML</a></button>
       </div>
       
       <div class="content">
         <div class="img">
-          <img src="logo2.png">
+          <img src="image/css.png">
         </div>
-        <button><a href="css.html">CSS Quiz</a></button>
+        <button><a href="quiz/css/css.html">CSS</a></button>
       </div>
       
       <div class="content">
         <div class="img">
-          <img src="logo3.png">
+          <img src="image/js.png">
         </div>
-        <button><a href="js.html">JS Quiz</a></button>
+        <button><a href="quiz/js/js.html">JavaScript</a></button>
       </div>
+
+      <div class="content">
+        <div class="img">
+          <img src="image/python.png">
+        </div>
+        <button><a href="#"><i class="fa fa-lock"></i>&nbsp;Python</a></button>
+      </div>
+
+      <div class="content">
+        <div class="img">
+          <img src="image/react.png">
+        </div>
+        <button><a href="#"><i class="fa fa-lock"></i>&nbsp;ReactJS</a></button>
+      </div>
+
+      <div class="content">
+        <div class="img">
+          <img src="image/java.png">
+        </div>
+        <button><a href="#"><i class="fa fa-lock"></i>&nbsp;Java</a></button>
+      </div>
+
+      <div class="content">
+        <div class="img">
+          <img src="image/angular.png">
+        </div>
+        <button><a href="#"><i class="fa fa-lock"></i>&nbsp;AngularJS</a></button>
+      </div>
+
+      <div class="content">
+        <div class="img">
+          <img src="image/node.png">
+        </div>
+        <button><a href="#"><i class="fa fa-lock"></i>&nbsp;NodeJS</a></button>
+      </div>
+
+
+
     </div>
+
+
+    <!-- Large Screen View -->
+
+    <main id="large">
+
+      <div id="carousel" class="carousel">
+  
+         <div id='iten_1' class="hideLeft">
+          <a href="#"><img src="image/node.png"></a>
+          <a href="#" style="text-decoration:none;"><button><i class="fa fa-lock"></i>&nbsp;NodeJS Quiz</button></a>
+        </div>
+  
+        <div id='item_2' class="prevLeftSecond">
+          <a href="#"><img src="image/java.png"></a>
+          <a href="#" style="text-decoration:none;"><button><i class="fa fa-lock"></i>&nbsp;Java Quiz</button></a>
+        </div>
+  
+        <div id='item_3' class="prev">
+          <a href="#"><img src="image/react.png"></a>
+          <a href="#" style="text-decoration:none;"><button><i class="fa fa-lock"></i>&nbsp;ReactJS Quiz</button></a>
+        </div>
+  
+        <div id='item_4' class="selected">
+          <a href="quiz/html/html.html"><img src="image/html.png"></a>
+          <a href="quiz/html/html.html" style="text-decoration:none;"><button>HTML Quiz</button></a>
+        </div>
+  
+        <div id='item_5' class="next">
+          <a href="quiz/css/css.html"><img src="image/css.png"></a>
+          <a href="quiz/css/css.html" style="text-decoration:none;"><button>CSS Quiz</button></a>
+        </div>
+  
+        <div id='item_6' class="nextRightSecond">
+          <a href="quiz/js/js.html"><img src="image/js.png"></a>
+          <a href="quiz/js/js.html" style="text-decoration:none;"><button>JavaScript Quiz</button></a>
+        </div>
+  
+        <div id='item_7' class="hideRight">
+          <a href="#"><img src="image/python.png"></a>
+          <a href="#" style="text-decoration:none;"><button><i class="fa fa-lock"></i>&nbsp;Python Quiz</button></a>
+        </div>
+  
+        <div id='item_8' class="hideRight">
+          <a href="#"><img src="image/angular.png"></a>
+          <a href="#" style="text-decoration:none;"><button><i class="fa fa-lock"></i>&nbsp;AngularJS Quiz</button></a>
+        </div>
+  
+      </div>
+  
+      <div class="buttons">
+        <button class="button-82-pushable" role="button" id="prev"><span class="button-82-shadow"></span><span class="button-82-edge"></span><span class="button-82-front text">Previous</span></button>
+  
+  
+        <button class="button-82-pushable" role="button" id="next"><span class="button-82-shadow"></span><span class="button-82-edge"></span><span class="button-82-front text">Next</span></button>
+      </div>
+    </main>
     
-    <script src="home.js"></script>
+    <script src="src/home.js"></script>
   </body>
 </html>
